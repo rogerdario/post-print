@@ -60,6 +60,10 @@ div.nav a:hover {
 	color: #ff00d7;
 }
 
+div.nav a:target {
+	color: #0050c8;
+}
+
 div.nav-sidebar {
 	position: fixed;
 	top: 0;
@@ -133,6 +137,20 @@ div.menu-btn, div.menu-btn a, div.menu-btn a:visited {
 }
 
 div.menu-btn:hover {
+	color: #ff00d7;
+}
+
+div#toTop {
+	text-align: center;
+	left: 49.5%;
+	bottom: 30px;
+	position: fixed;
+	display: none;
+	cursor: pointer;
+	z-index: 20;
+}
+
+div#toTop:hover {
 	color: #ff00d7;
 }
 
@@ -302,17 +320,13 @@ div.student-wrapper {
 div.student-name {
 	position: absolute;
 	width: 55%;
-	/* left: 12.5%; */
-	left: 15px;
+	left: 0;
 	top: 0;
-	min-height: 100vh;
-	height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-   /*  text-align: center; */
     z-index: 2;
 }
 
@@ -330,21 +344,12 @@ div.student-name h1 {
 div.student-name h2 {
 	font-family: "Romana-Lig", "Benjamins Gothic", "Helvetica", sans-serif;
 	font-weight: normal;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	line-height: 2.5rem;
 	color: #fff;
 	border: 2px solid #fff;
 	padding: 8px 10px 2px 10px;
 }
-
-/* div.student-name h1.white {
-	-webkit-text-stroke: 2px #fff;
- 	-webkit-text-fill-color: transparent;
-}
-
-div.student-name h2.white {
-	color: #fff;
-} */
 
 div.student-name p a, div.student-name p a:visited {
 	font-family: "Benjamins Gothic", "HorleyOldStyleMTStd-Light", "Times", serif;
@@ -366,6 +371,12 @@ div.student-wrapper img {
 	position: relative;
 	padding: 3%;
 	flex: 1 0 240px;
+	opacity: 0.5;
+}
+
+div.student-wrapper img:hover {
+	opacity: 1;
+	cursor: crosshair;
 }
 
 div.student-wrapper img.img-1 {
@@ -374,12 +385,32 @@ div.student-wrapper img.img-1 {
 }
 
 div.student-wrapper img.img-2 {
-	max-width: 50%;
+	max-width: 80%;
 	max-height: auto;
 }
 
 div.student-wrapper img.img-3 {
+	max-width: 50%;
+	max-height: auto;
+}
+
+div.student-wrapper img.img-4 {
+	max-width: 30%;
+	max-height: auto;
+}
+
+div.student-wrapper img.img-5 {
+	max-width: 40%;
+	max-height: auto;
+}
+
+div.student-wrapper img.img-6 {
 	max-width: 35%;
+	max-height: auto;
+}
+
+div.student-wrapper img.img-7 {
+	max-width: 60%;
 	max-height: auto;
 }
 
@@ -387,28 +418,60 @@ div.student-wrapper video {
 	position: relative;
 	padding: 3%;
 	flex: 1 0 240px;
-	opacity: 0.9;
+	opacity: 0.5;
+}
+
+div.student-wrapper video:hover {
+	opacity: 1;
+	cursor: crosshair;
 }
 
 div.student-wrapper video.vid-1 {
 	min-width: 90%;
-	max-width: 100%;
+	max-width: 95%;
 	max-height: auto;
 }
 
-/* --- STUDENT BG --- */
+/* --- FOOTER --- */
 
-/* section.student#keith-eager {
-	background: #cecece;
+footer.info {
+	background: #0050c8;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	z-index: 100;
+	padding: 30px;
+	display: flex;
+    align-items: center;
 }
 
-section.student#lisa-elaine-frost {
-	background: #ffd8c7;
+div.info-wrapper {
+	width: 80%;
+	display: flex;
+    flex-wrap: wrap;
 }
 
-section.student#jarret-heckbert {
-	background: #ffde5b;
-} */
+div.info-col {
+	flex: 1 0 290px;
+	padding-bottom: 30px;
+}
+
+div.info-col p, div.info-col a {
+	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+div.info-col p.serif {
+	font-family: "Romana-Lig", "Times", serif;
+	padding-top: 2px;
+}
+
+div.info-col a:hover {
+	color: #111;
+}
 
 /* --- NAVIGATION RESPONSIVE --- */
 
@@ -526,6 +589,18 @@ section.student#jarret-heckbert {
 		height: 100%;
 		max-height: 100%;
 	}
+
+	/* --- FOOTER --- */
+
+	div.info-wrapper {
+		width: 100%;
+		display: flex;
+	    flex-wrap: wrap;
+	}
+
+	div.info-col {
+		flex: 1 0 240px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -607,6 +682,7 @@ section.student#jarret-heckbert {
 		max-height: 100%;
 		max-height: auto;
 		padding: 2% 0;
+		opacity: 1;
 	}
 
 	div.student-wrapper video {
@@ -638,7 +714,6 @@ section.student#jarret-heckbert {
 
 	section.student {
 		min-height: 100%;
-		max-height: 100%;
 	}
 
 	div.student-name h1 {
@@ -647,9 +722,21 @@ section.student#jarret-heckbert {
 	}
 
 	div.student-wrapper {
-		min-height: 50vh;
-		max-height: 100vh;
 	    align-items: flex-start;
+	}
+
+	/* --- FOOTER --- */
+
+	div.info-col {
+		flex: 1 0 220px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	/* --- FOOTER --- */
+
+	div.info-col {
+		text-align: center;
 	}
 
 }
