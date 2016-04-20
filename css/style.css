@@ -8,22 +8,26 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* --- EMBED FONTS --- */
 
 @font-face {
-  font-family: 'Benjamins Gothic';
-  src: url('../fonts/bc-benjamins-gothic-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/bc-benjamins-gothic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/bc-benjamins-gothic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../bc-benjamins-gothic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../bc-benjamins-gothic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../bc-benjamins-gothic-webfont.svg#benjamins-gothic') format('svg'); /* Legacy iOS */
+    font-family: 'benjamins_gothicdemibold';
+    src: url('../fonts/bc-benjamins-gothic-webfont.eot');
+    src: url('../fonts/bc-benjamins-gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bc-benjamins-gothic-webfont.woff2') format('woff2'),
+         url('../fonts/bc-benjamins-gothic-webfont.woff') format('woff'),
+         url('../fonts/bc-benjamins-gothic-webfont.ttf') format('truetype'),
+         url('../fonts/bc-benjamins-gothic-webfont.svg#benjamins_gothicdemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
   font-family: 'Romana-Lig';
-  src: url('../fonts/30EDBA_0_0.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/30EDBA_0_0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/30EDBA_0_0.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/30EDBA_0_0.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/30EDBA_0_0.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/30EDBA_0_0.eot');
+  src: url('../fonts/30EDBA_0_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30EDBA_0_0.woff2') format('woff2'),
+       url('../fonts/30EDBA_0_0.woff') format('woff'),
+       url('../fonts/30EDBA_0_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* --- GLOBAL STYLES --- */
@@ -32,7 +36,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	margin: 0;
 	text-rendering: optimizeLegibility;
 	font-variant-ligatures: common-ligatures;
-/* 	border: 1px solid red; */
 }
 
 header, section, footer {
@@ -41,10 +44,20 @@ header, section, footer {
 	margin: 0 auto;
 }
 
+img {
+	width: 100%;
+	height: 100%;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+}
+
 /* --- NAVIGATION --- */
 
 div.nav {
-	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
+	font-family: "benjamins_gothicdemibold", "Helvetica", sans-serif;
 	font-size: 1.5rem;
 	letter-spacing: 0.02rem;
 	text-transform: uppercase;
@@ -191,7 +204,7 @@ div.title {
 }
 
 div.title-sans {
-	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
+	font-family: "benjamins_gothicdemibold", "Helvetica", sans-serif;
 	letter-spacing: 0.1rem;
 	-webkit-text-stroke: 1px #0050c8;
  	-webkit-text-fill-color: transparent;
@@ -230,7 +243,7 @@ div.intro-text {
 }
 
 div.intro-text p {
-	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
+	font-family: "benjamins_gothicdemibold", "Helvetica", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 }
@@ -247,7 +260,7 @@ div.intro-text span {
 div.intro-text a, div.intro-text a:visited {
 	text-decoration: none;
 	border-bottom: 2px solid #111;
-	padding-bottom: 3px;
+	padding-bottom: 1px;
 	color: #111;
 }
 
@@ -261,7 +274,7 @@ div.intro-text a.btn {
 	display: block;
 	width: 50%;
 	margin-top: 1.5rem;
-	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
+	font-family: "benjamins_gothicdemibold", "Helvetica", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.25rem;
 	letter-spacing: 0.05rem;
@@ -313,28 +326,28 @@ div.student-name {
 }
 
 div.student-name h1 {
-	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
+	font-family: "benjamins_gothicdemibold", "Helvetica", sans-serif;
 	font-size: 6.5rem;
 	line-height: 5.75rem;
 	letter-spacing: 0.25rem;
 	text-transform: uppercase;
-	-webkit-text-stroke: 2px #fff;
+	color: #fff;
+	-webkit-text-stroke: 1.5px #fff;
  	-webkit-text-fill-color: transparent;
  	padding-bottom: 15px;
 }
 
 div.student-name h2 {
-	font-family: "Romana-Lig", "Benjamins Gothic", "Helvetica", sans-serif;
-	font-weight: normal;
+	font-family: "Romana-Lig", "Times", serif;
 	font-size: 2rem;
 	line-height: 2.5rem;
 	color: #fff;
-	border: 2px solid #fff;
+	border: 1.5px solid #fff;
 	padding: 8px 10px 2px 10px;
 }
 
 div.student-name p a, div.student-name p a:visited {
-	font-family: "Benjamins Gothic", "HorleyOldStyleMTStd-Light", "Times", serif;
+	font-family: "benjamins_gothicdemibold", "Helvetica", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.75rem;
 	color: #111;
@@ -349,11 +362,21 @@ div.student-name p a:hover {
 	border: 2px solid #fff;
 }
 
+div.img-wrapper {
+	position: relative;
+	width: 100%;
+}
+
 div.student-wrapper img {
 	position: relative;
 	padding: 3%;
-	flex: 1 0 240px;
+	flex: 1 0 320px;
 	opacity: 0.5;
+	margin: 0 auto;
+}
+
+div.student-wrapper img:nth-child(3) {
+	margin-left: 10%;
 }
 
 div.student-wrapper img:hover {
@@ -435,13 +458,28 @@ div.info-wrapper {
     flex-wrap: wrap;
 }
 
+div.info-cat {
+	width: 100%;
+}
+
+div.info-cat h1 {
+	font-family: "benjamins_gothicdemibold", "Helvetica", sans-serif;
+	font-size: 3rem;
+	letter-spacing: 0.25rem;
+	text-transform: uppercase;
+	color: #111;
+	-webkit-text-stroke: 1.5px #111;
+ 	-webkit-text-fill-color: transparent;
+}
+
 div.info-col {
 	flex: 1 0 290px;
 	padding-bottom: 30px;
+	padding-right: 15px;
 }
 
 div.info-col p, div.info-col a {
-	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
+	font-family: "benjamins_gothicdemibold", "Helvetica", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 	color: #111;
@@ -530,7 +568,7 @@ video.bg-video {
 
 	div.nav-title {
 		top: 20px;
-		right: 20px;
+		left: 20px;
 	}
 
 	div.nav-rsvp {
@@ -549,6 +587,10 @@ video.bg-video {
 
 	div.nav-sidebar ul {
 		line-height: 2.4rem;
+	}
+
+	div#toTop {
+		bottom: 20px;
 	}
 }
 
@@ -635,9 +677,10 @@ video.bg-video {
 	/* --- STUDENT --- */
 
 	div.student-wrapper {
-		width: 100%;
-		padding: 0;
-		justify-content: center;
+		min-height: 100%;
+		height: 100%;
+	    justify-content: flex-start;
+	    align-items: flex-start;
 	}
 
 	div.student-name {
@@ -655,13 +698,14 @@ video.bg-video {
 	div.student-name h1 {
 		font-size: 7rem;
 		line-height: 6.25rem;
-		-webkit-text-stroke: 2px #111;
+		color: #111;
+		-webkit-text-stroke: 1px #111;
 	 	-webkit-text-fill-color: transparent;	
 	}
 
 	div.student-name h2 {
 		color: #111;
-		border: 2px solid #111;
+		border: 1px solid #111;
 	}
 
 	div.student-name p a, div.student-name p a:visited {
@@ -680,6 +724,10 @@ video.bg-video {
 		max-height: auto;
 		padding: 2% 0;
 		opacity: 1;
+	}
+
+	div.student-wrapper img:nth-child(3) {
+		margin-left: 0;
 	}
 
 	div.student-wrapper video {
@@ -702,9 +750,15 @@ video.bg-video {
 
 	/* --- HEADER --- */
 
+	div.header-wrapper {
+		width: 80%;
+		display: flex;
+		align-items: flex-start;
+	}
+
 	div.title {
-		font-size: 2.75rem;
-		line-height: 3rem;
+		font-size: 2.5rem;
+		line-height: 2.75rem;
 	}
 
 	/* --- STUDENT --- */
@@ -724,15 +778,31 @@ video.bg-video {
 
 	/* --- FOOTER --- */
 
+	footer.info {
+	    background: #ff00d7;
+	}
+
 	div.info-col {
 		flex: 1 0 220px;
 	}
 }
 
 @media screen and (max-width: 500px) {
+
+	/* --- HEADER --- */
+
+	div.title {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+
 	/* --- FOOTER --- */
 
 	div.info-col {
+		text-align: center;
+	}
+
+	div.info-cat {
 		text-align: center;
 	}
 
@@ -749,6 +819,7 @@ video.bg-video {
 	/* --- HEADER --- */
 
 	header {
+		min-height: 100vh;
 		background-image: none;
 	}
 
@@ -785,12 +856,21 @@ video.bg-video {
 	}
 
 	div.student-name h1 {
-		font-size: 4rem;
-		line-height: 3.5rem;
+		font-size: 2.5rem;
+		line-height: 2.75rem;
+		-webkit-text-stroke: 0.75px #111;
+	 	-webkit-text-fill-color: transparent;
 	}
 
 	div.student-name h2 {
-		font-size: 2.25rem;
-		line-height: 1.25rem;
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	/* --- FOOTER --- */
+	
+	video.bg-video {
+		position: absolute;
+		display: none;
 	}
 }
