@@ -376,7 +376,7 @@ div.student-wrapper img {
 
 div.student-wrapper img:hover {
 	opacity: 1;
-	cursor: crosshair;
+	cursor: url('../img/favicon-16x16.png'), auto;
 }
 
 div.student-wrapper img.img-1 {
@@ -423,7 +423,7 @@ div.student-wrapper video {
 
 div.student-wrapper video:hover {
 	opacity: 1;
-	cursor: crosshair;
+	cursor: url('../img/favicon-16x16.png'), auto;
 }
 
 div.student-wrapper video.vid-1 {
