@@ -373,6 +373,7 @@ div.student-wrapper img {
 	flex: 1 0 320px;
 	opacity: 0.5;
 	margin: 0 auto;
+	-webkit-backface-visibility: hidden;
 }
 
 div.student-wrapper img:nth-child(3) {
@@ -696,8 +697,8 @@ video.bg-video {
 	}
 
 	div.student-name h1 {
-		font-size: 7rem;
-		line-height: 6.25rem;
+		font-size: 6.5rem;
+		line-height: 5.75rem;
 		color: #111;
 		-webkit-text-stroke: 1px #111;
 	 	-webkit-text-fill-color: transparent;	
@@ -744,6 +745,16 @@ video.bg-video {
 	div.student-wrapper img:last-child {
 		padding-bottom: 0;
 	}
+
+	/* --- FOOTER --- */
+	footer.info {
+	    background: #ff00d7;
+	}
+
+	video.bg-video {
+		position: absolute;
+		display: none;
+	}
 }
 
 @media screen and (max-width: 620px) {
@@ -777,10 +788,6 @@ video.bg-video {
 	}
 
 	/* --- FOOTER --- */
-
-	footer.info {
-	    background: #ff00d7;
-	}
 
 	div.info-col {
 		flex: 1 0 220px;
@@ -865,12 +872,5 @@ video.bg-video {
 	div.student-name h2 {
 		font-size: 1.5rem;
 		line-height: 2rem;
-	}
-
-	/* --- FOOTER --- */
-	
-	video.bg-video {
-		position: absolute;
-		display: none;
 	}
 }

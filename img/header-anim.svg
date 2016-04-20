@@ -14,7 +14,7 @@
 		-moz-animation: dash 4s ease-in forwards;
 		animation: dash 4s ease-in forwards;
 	}
-	@-webkit-keyframes dash {
+	@keyframes dash {
 		0% {
 			stroke-dashoffset: 1500;
 		}

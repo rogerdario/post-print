@@ -18,3 +18,4 @@ Website for the 2016 graduation thesis show of OCAD U’s Printmaking and Public
 - [Animated background gradient by Mario Klingemann](http://codepen.io/quasimondo/pen/lDdrF)
 - [TweenMax by GreenSock](https://greensock.com/tweenmax)
 - [Countdown by Edson Hilios](http://hilios.github.io/jQuery.countdown/)
+- [Echo.js by Todd Motto](https://toddmotto.com/echo-js-simple-javascript-image-lazy-loading/)
