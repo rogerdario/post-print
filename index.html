@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>POST-PRINT / OCAD U Printmaking & Publications Thesis Show</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/jquery.countdown.js" type="text/javascript"></script>
+	<link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+	<meta name="description" content="Website for the 2016 graduation thesis show of OCAD U’s Printmaking and Publications departments.">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+
+<div class="nav clearfix">
+	<div class="nav-countdown seq-0" id="countdown"></div>
+	<div class="nav-info seq-0"><a href="/info">Information</a></div>
+	<div class="nav-title seq-0"><a href="index.html">Post—Print</a></div>
+	<div class="menu-btn seq-0">Menu</div>
+	<div class="nav-rsvp seq-0"><a href="http://rsvp.postprint.net" target="_blank">R-S-V-P</a></div>
+	<div class="nav-sidebar seq-0">
+		<ul>
+			<li><a href="#keith-eager" id="name-1">Keith Eager</a></li>
+			<li><a href="#lisa-elaine-frost" id="name-2">Lisa Elaine Frost</a></li>
+			<li><a href="#jarret-heckbert" id="name-3">Jarrett Heckbert</a></li>
+			<li><a href="#tetyana-herych" id="name-4">Tetyana Herych</a></li>		
+			<li><a href="#aaron-markiewicz" id="name-5">Aaron Markiewicz</a></li>
+			<li><a href="#ramona-maung" id="name-6">Ramona Maung</a></li>
+			<li><a href="#annunziata-morant" id="name-7">Annunziata Morant</a></li>
+			<li><a href="#kaitlyn-page" id="name-6">Kaitlyn Page</a></li>
+			<li><a href="#simone-sparenberg" id="name-8">Simone Sparenberg</a></li>
+			<li><a href="#tania-stepanova" id="name-9">Tania Stepanova</a></li>
+			<li><a href="#marisa-torres" id="name-10">Marisa Torres</a></li>
+			<li><a href="#alex-wood" id="name-11">Alex Wood</a></li>
+			<li><a href="#joanna-yetter" id="name-12">Joanna Yetter</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- HEADER -->
+
+<header class="clearfix">
+	<div class="header-wrapper">
+		<div class="header-text-wrapper">
+			<div class="title title-sans seq-1">OCAD U 2016</div>
+			<div class="title title-sans seq-2">Printmaking and Publications</div>
+			<div class="title title-serif seq-3">Graduation Thesis Show</div>
+			<div class="title title-sans title-indent seq-4">Beaver Hall Gallery</div>
+			<div class="title title-serif title-indent seq-5">29 McCaul Street</div>
+			<div class="title title-serif title-indent seq-6">Toronto M5T1V7</div>
+			<div class="title title-serif seq-7">April 22 – 25 (10a–8p)</div>
+			<div class="title title-sans title-indent seq-8">Opening Reception</div>
+			<div class="title title-serif title-indent seq-9">April 22 (7–10p)</div>
+		</div>
+	</div>
+</header>
+
+<!-- INTRO -->
+
+<section class="intro gradient clearfix">
+	<div class="intro-wrapper">
+		<div class="intro-text">
+			<p>We invite you to <span>Post-Print</span>, an exhibition of work featuring thesis students from the <a href="http://www.ocadu.ca/academics/undergraduate/printmaking.htm" target="_blank">Printmaking</a> and <a href="http://www.ocadu.ca/academics/undergraduate/cross-disciplinary-art-publications.htm" target="_blank">Cross Disciplinary Studies: Publications</a> departments.</p>
+			<p class="indent">This exhibition brings together the work of thirteen Printmaking and Publications students graduating from OCAD University in 2016. Their work stems from a variety of media including screenprinting, stone lithography, intaglio, letterpress, papermaking, and artists’ books.</p>
+			<p class="indent">Moving beyond traditional two-dimensional works on paper, this exhibition showcases the innovative integration of installation and performance within print and publishing.</p>
+			<a href="http://rsvp.postprint.net" target="_blank" class="btn">R-S-V-P</a>
+		</div>
+	</div>
+</section>
+
+<!-- STUDENTS -->
+
+<section class="student clearfix" id="keith-eager">
+	<div class="student-wrapper">
+		<div class="student-name">
+			<h1>Keith Eager</h1>
+			<h2>Printmaking</h2>
+			<p><a href="" target="_blank">Website</a> <a href="mailto:" target="_blank">Email</a> <a href="http://instagram.com" target="_blank">Instagram</a></p>
+		</div>
+		<img src="http://unsplash.it/600/400" alt="" class="img-1">
+		<img src="http://unsplash.it/400/700" alt="" class="img-2">
+		<img src="http://unsplash.it/900/700" alt="" class="img-3">
+	</div>
+</section>
+
+<section class="student clearfix" id="lisa-elaine-frost">
+	<div class="student-wrapper">
+		<div class="student-name">
+			<h1>Lisa Elaine Frost</h1>
+			<h2>Printmaking</h2>
+			<p><a href="" target="_blank">Website</a> <a href="mailto:" target="_blank">Email</a> <a href="http://instagram.com" target="_blank">Instagram</a></p>
+		</div>
+		<img src="http://unsplash.it/600/400" alt="" class="img-1">
+		<img src="http://unsplash.it/400/700" alt="" class="img-2">
+		<img src="http://unsplash.it/900/700" alt="" class="img-3">
+	</div>
+</section>
+
+<!-- JS  -->
+
+<script>
+	$(document).ready(function() {
+		$(".menu-btn").click(function() {		
+			$( ".nav-sidebar" ).slideToggle('fast', function() {
+			$(this).attr('style', '').toggleClass('open');
+            });
+		});
+		$(".nav-sidebar").click(function() {		
+			$( ".nav-sidebar" ).slideToggle('fast', function() {
+			$(this).attr('style', '').toggleClass('open');
+            });
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$('#countdown').countdown('2016/04/22 19:00:00', function(event) {
+	    $(this).html(event.strftime('%D:%H:%M:%S'));
+	});
+</script>
+
+<script src="js/bg-hover.js" type="text/javascript"></script>
+<script src="js/bg-gradient.js" type="text/javascript"></script>
+<script src="js/TweenMax.min.js" type="text/javascript"></script>
+<!-- <script src="js/text-anim.js" type="text/javascript"></script> -->
+
+</body>
+</html>
