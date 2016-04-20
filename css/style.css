@@ -18,7 +18,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 @font-face {
-  font-family: 'Junicode-Regular';
+  font-family: 'Romana-Lig';
   src: url('../fonts/30EDBA_0_0.eot'); /* IE9 Compat Modes */
   src: url('../fonts/30EDBA_0_0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('../fonts/30EDBA_0_0.woff2') format('woff2'), /* Super Modern Browsers */
@@ -32,6 +32,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	margin: 0;
 	text-rendering: optimizeLegibility;
 	font-variant-ligatures: common-ligatures;
+/* 	border: 1px solid red; */
 }
 
 header, section, footer {
@@ -62,7 +63,7 @@ div.nav a:hover {
 div.nav-sidebar {
 	position: fixed;
 	top: 0;
-	right: 30px;
+	right: 15px;
 	width: 15%;
 	min-width: 200px;
 	top: 80px;
@@ -87,9 +88,8 @@ div.nav-sidebar ul li {
 
 div.nav-title {
 	position: fixed;
-	top: 0;
-	right: 0;
-	margin: 30px;
+	top: 30px;
+	right: 15px;
 	width: 15%;
 	min-width: 200px;
 	z-index: 20;
@@ -97,11 +97,10 @@ div.nav-title {
 
 div.nav-rsvp {
 	position: fixed;
-	bottom: 0;
-	right: 0;
+	bottom: 30px;
+	right: 15px;
 	width: 15%;
 	min-width: 200px;
-	margin: 30px;
 	z-index: 20;
 }
 
@@ -199,7 +198,7 @@ div.title-sans {
 }
 
 div.title-serif {
-	font-family: "Romana-Lig", "HorleyOldStyleMTStd-Light", "Times", serif;
+	font-family: "Romana-Lig", "Times", serif;
 }
 
 div.title:last-child {
@@ -248,7 +247,7 @@ div.intro-text span {
 div.intro-text a, div.intro-text a:visited {
 	text-decoration: none;
 	border-bottom: 2px solid #111;
-	padding-bottom: 7px;
+	padding-bottom: 3px;
 	color: #111;
 }
 
@@ -302,25 +301,25 @@ div.student-wrapper {
 
 div.student-name {
 	position: absolute;
-	width: 100%;
-	left: 0;
+	width: 55%;
+	/* left: 12.5%; */
+	left: 15px;
 	top: 0;
 	min-height: 100vh;
 	height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;
+   /*  text-align: center; */
     z-index: 2;
 }
 
 div.student-name h1 {
-	width: 70%;
 	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
-	font-size: 7rem;
-	line-height: 6.25rem;
+	font-size: 6.5rem;
+	line-height: 5.75rem;
 	letter-spacing: 0.25rem;
 	text-transform: uppercase;
 	-webkit-text-stroke: 2px #fff;
@@ -329,37 +328,48 @@ div.student-name h1 {
 }
 
 div.student-name h2 {
-	font-family: "Benjamins Gothic", "Helvetica", sans-serif;
-	font-size: 3.25rem;
-	line-height: 2.75rem;
+	font-family: "Romana-Lig", "Benjamins Gothic", "Helvetica", sans-serif;
+	font-weight: normal;
+	font-size: 2.5rem;
+	line-height: 2.5rem;
 	color: #fff;
-	padding-bottom: 30px;
+	border: 2px solid #fff;
+	padding: 8px 10px 2px 10px;
 }
+
+/* div.student-name h1.white {
+	-webkit-text-stroke: 2px #fff;
+ 	-webkit-text-fill-color: transparent;
+}
+
+div.student-name h2.white {
+	color: #fff;
+} */
 
 div.student-name p a, div.student-name p a:visited {
 	font-family: "Benjamins Gothic", "HorleyOldStyleMTStd-Light", "Times", serif;
 	font-size: 1.5rem;
 	line-height: 2.75rem;
-	color: #fff;
+	color: #111;
 	text-decoration: none;
 	padding: 5px 10px;
 	margin: 0 5px;
-	border: 2px solid #fff;
+	border: 2px solid #111;
 }
 
 div.student-name p a:hover {
-	color: #111;
-	border: 2px solid #111;
+	color: #fff;
+	border: 2px solid #fff;
 }
 
 div.student-wrapper img {
 	position: relative;
-	padding: 2%;
+	padding: 3%;
 	flex: 1 0 240px;
 }
 
 div.student-wrapper img.img-1 {
-	max-width: 33%;
+	max-width: 90%;
 	max-height: auto;
 }
 
@@ -373,9 +383,36 @@ div.student-wrapper img.img-3 {
 	max-height: auto;
 }
 
+div.student-wrapper video {
+	position: relative;
+	padding: 3%;
+	flex: 1 0 240px;
+	opacity: 0.9;
+}
+
+div.student-wrapper video.vid-1 {
+	min-width: 90%;
+	max-width: 100%;
+	max-height: auto;
+}
+
+/* --- STUDENT BG --- */
+
+/* section.student#keith-eager {
+	background: #cecece;
+}
+
+section.student#lisa-elaine-frost {
+	background: #ffd8c7;
+}
+
+section.student#jarret-heckbert {
+	background: #ffde5b;
+} */
+
 /* --- NAVIGATION RESPONSIVE --- */
 
-@media screen and (max-width: 768px), screen and (max-height: 600px) {
+@media screen and (max-width: 960px), screen and (max-height: 600px) {
 	div.nav-sidebar {
 		top: 0;
 		right: 0;
@@ -409,7 +446,7 @@ div.student-wrapper img.img-3 {
 
 	div.nav-title {
 		color: #fff;
-		left: 0;
+		left: 30px;
 	}
 
 	div.nav-countdown {
@@ -423,13 +460,23 @@ div.student-wrapper img.img-3 {
 
 	div.nav-rsvp {
 		text-align: right;
-		right: 0;
+		right: 30px;
 	}
 }
 
 @media screen and (max-width: 420px), screen and (max-height: 420px) {
-	div.nav-title, div.nav-rsvp, div.nav-info, div.menu-btn {
+	div.nav-info, div.menu-btn {
 		margin: 20px;
+	}
+
+	div.nav-title {
+		top: 20px;
+		right: 20px;
+	}
+
+	div.nav-rsvp {
+		bottom: 20px;
+		right: 20px;
 	}
 
 	div.nav-sidebar {
@@ -525,18 +572,24 @@ div.student-wrapper img.img-3 {
 	div.student-name {
 		width: 100%;
 		position: relative;
+		left: 0;
 		min-height: 0;
 		height: auto;
 		padding-bottom: 10px;
+		align-items: center;
+		text-align: center;
 	}
 
 	div.student-name h1 {
 		font-size: 7rem;
 		line-height: 6.25rem;
+		-webkit-text-stroke: 2px #111;
+	 	-webkit-text-fill-color: transparent;	
 	}
 
 	div.student-name h2 {
 		color: #111;
+		border: 2px solid #111;
 	}
 
 	div.student-name p a, div.student-name p a:visited {
@@ -550,10 +603,21 @@ div.student-wrapper img.img-3 {
 	}
 
 	div.student-wrapper img {
-		min-width: 95%;
+		min-width: 100%;
 		max-height: 100%;
 		max-height: auto;
 		padding: 2% 0;
+	}
+
+	div.student-wrapper video {
+		min-width: 100%;
+		max-height: 100%;
+		max-height: auto;
+		padding: 2% 0;
+	}
+
+	div.student-wrapper video.vid-1 {
+		min-width: 100%;
 	}
 
 	div.student-wrapper img:last-child {
@@ -572,14 +636,20 @@ div.student-wrapper img.img-3 {
 
 	/* --- STUDENT --- */
 
+	section.student {
+		min-height: 100%;
+		max-height: 100%;
+	}
+
 	div.student-name h1 {
 		font-size: 4.5rem;
 		line-height: 4rem;
 	}
 
-	div.student-name h2 {
-		font-size: 2.75rem;
-		line-height: 1.5rem;
+	div.student-wrapper {
+		min-height: 50vh;
+		max-height: 100vh;
+	    align-items: flex-start;
 	}
 
 }
