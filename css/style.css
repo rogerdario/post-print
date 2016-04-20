@@ -642,6 +642,7 @@ video.bg-video {
 
 	div.student-name {
 		width: 100%;
+		padding: 30px;
 		position: relative;
 		left: 0;
 		min-height: 0;
