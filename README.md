@@ -6,7 +6,6 @@ Website for the 2016 graduation thesis show of OCAD U’s Printmaking and Public
 
 ## To Do
 - Add sidebar scroll indicator
-- Add lazy load
 
 ## Colophon
 
